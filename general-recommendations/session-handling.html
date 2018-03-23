@@ -1,0 +1,248 @@
+<!doctype html>
+<html class="docs-html">
+<head>
+  <meta charset="utf-8">
+  <title>Session handling - CONNECT ID Documentation</title>
+    <meta name="description" content="General recommendations">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Session handling - CONNECT ID Documentation">
+  <meta name="twitter:description" content="General recommendations">
+  <meta name="twitter:image" content="https://telenordigital.github.io/id-docs.telenordigital.com/img/og_image.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Session handling - CONNECT ID Documentation" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://telenordigital.github.io/id-docs.telenordigital.com/general-recommendations/session-handling.html" />
+  <meta property="og:image" content="https://telenordigital.github.io/id-docs.telenordigital.com/img/og_image.jpg" />
+  <meta property="og:description" content="General recommendations" />
+  <meta property="og:site_name" content="CONNECT ID Documentation" />
+
+  <link rel="stylesheet" type="text/css" href="/id-docs.telenordigital.com/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/id-docs.telenordigital.com/script/swagger-ui/swagger-ui-docs-preset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link id="searchIndex" href="/id-docs.telenordigital.com/index.json" rel="preload" as="fetch">
+</head>
+<body class="docs-body">
+  <div id="docs-topbar" class="docs-topbar no-print">
+    <div id="docs-topbar__inner" class="docs-topbar__inner">
+      <a href="#" id="docs-menu-toggle" class="docs-topbar__icon docs-topbar__icon--menu-toggle hidden-desktop"><i class="material-icons md-24">menu</i></a>
+      <a href="#" id="docs-search-hide" class="docs-topbar__icon docs-topbar__icon--search-hide hidden-desktop"><i class="material-icons md-24">arrow_back</i></a>
+      <div class="docs-topbar__icon docs-topbar__icon--search visible-desktop"><i class="material-icons md-24">search</i></div>
+      <input id="docs-search-box" type="text" class="docs-topbar__search-box" placeholder="Search" tabindex="1" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus />
+      <a href="#" id="docs-search-close" class="docs-topbar__icon docs-topbar__icon--search-close"><i class="material-icons md-24">close</i></a>
+      <a href="#" id="docs-search-show" class="docs-topbar__icon docs-topbar__icon-search-show hidden-desktop"><i class="material-icons md-24">search</i></a>
+
+          <a class="docs-topbar__link visible-desktop" href="https://github.com/telenordigital/id-docs.telenordigital.com">On Github</a>
+    </div>
+    <div id="docs-search" class="docs-search">
+      <ul id="docs-search-results" class="docs-search-results"></ul>
+    </div>
+  </div>
+  <div id="docs-sidebar" class="docs-sidebar visible-desktop no-print">
+    <nav class="docs-nav">
+      <a class="docs-nav__logo" href="/id-docs.telenordigital.com/"></a>
+        <ul class="docs-nav__ul">
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Get started</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/get-started/register-client.html" class="docs-nav__item">Register client</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/get-started/client-registration-details.html" class="docs-nav__item">Required registration details</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">What is CONNECT?</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/how-it-works.html" class="docs-nav__item">How it works</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/single-sign-on.html" class="docs-nav__item">Single sign on</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/levels-of-assurance.html" class="docs-nav__item">Various security levels (Levels of assurance)</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/account-management.html" class="docs-nav__item">Account management</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/other-features.html" class="docs-nav__item">Other CONNECT features</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/what-is-connect/ui-examples.html" class="docs-nav__item">UI examples</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/general-recommendations.html" class="docs-nav__item">General recommendations</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/general-recommendations/integration-sign-in-details.html" class="docs-nav__item">Integration details for handling sign in</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/general-recommendations/session-handling.html" class="docs-nav__item">Session handling</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/general-recommendations/terminology.html" class="docs-nav__item">Terminology/Glossary</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">Integrate</span>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/integrate-android-sdk.html" class="docs-nav__item">Android SDK integration</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/setup.html" class="docs-nav__item">Setup</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/sign-in-user.html" class="docs-nav__item">Sign in user</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/get-access-token.html" class="docs-nav__item">Get a valid access token</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/access-user-information.html" class="docs-nav__item">Access user information</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/check-user-state.html" class="docs-nav__item">Check user state</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/integrate-android-sdk/customise-the-user-experience.html" class="docs-nav__item">Customise the user experience</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/integrate-ios-sdk.html" class="docs-nav__item">iOS SDK integration</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/integrate-web-app.html" class="docs-nav__item">Web application integration</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">CONNECT features</span>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/authorization-and-authentication.html" class="docs-nav__item">Authorization &amp; authentication</a>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/authorization-and-authentication/scope.html" class="docs-nav__item">Scope</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/authorization-and-authentication/client-security-measures.html" class="docs-nav__item">Client security measures</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/authorization-and-authentication/id-token.html" class="docs-nav__item">ID token</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/authorization-and-authentication/sso.html" class="docs-nav__item">Single sign-on</a>
+                            </li>
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/authorization-and-authentication/authorization-examples.html" class="docs-nav__item">Authorization code examples</a>
+                            </li>
+                    </ul>
+                </li>
+                <li class="docs-nav__li docs-nav__li--subgroup">
+                          <a href="/id-docs.telenordigital.com/user-data.html" class="docs-nav__item">User data</a>
+                </li>
+                <li class="docs-nav__li docs-nav__li--category">
+                          <span class="docs-nav__item">API Reference</span>
+                    <ul class="docs-nav__ul">
+                            <li class="docs-nav__li">
+                                      <a href="/id-docs.telenordigital.com/apireference/authentication.html" class="docs-nav__item">Authentication &amp; authorization</a>
+                            </li>
+                    </ul>
+                </li>
+        </ul>
+        <div class="docs-sidebar__menuLinks hidden-desktop">
+          <hr class="docs-nav__hr" />
+          <ul class="docs-nav__ul">
+              <li class="docs-nav__li">
+                <a href="https://github.com/telenordigital/id-docs.telenordigital.com" class="docs-nav__item">On Github</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <div id="barba-wrapper" class="docs-wrapper">
+    <div class="docs-content barba-container">
+      <h1>Session handling</h1>
+        <ol class="docs-breadcrumbs tn-breadcrumbs visible-desktop">
+                <li class="tn-breadcrumb">
+                    <a href="/id-docs.telenordigital.com/">Home</a>
+                </li>
+              <li class="tn-breadcrumb">
+                      <a href="/id-docs.telenordigital.com/general-recommendations.html">General recommendations</a>
+              </li>
+            <li class="tn-breadcrumb tn-breadcrumb--active">Session handling</li>
+        </ol>
+      <p>On mobile:</p>
+<p>How long a user is logged in after having signed in via CONNECT is handled by your service. A common “stay signed in” duration is 90 days, after which the user has to sign in again. Depending on the sensitivity of your data, this period can be made shorter or longer. The mobile device is considered personal.</p>
+<p>On desktop:</p>
+<p>A desktop device is considered less personal. We therefore recommend to make use of our “Stay signed in” functionality. Signing in with the box unchecked will result in the user being signed out when the browser window is closed.</p>
+<ul>
+<li>Your service can decide if it should be checked or unchecked by default.</li>
+<li>The users can decide if they want to stay signed in.
+<em>It is important that your service honours this decision.</em></li>
+</ul>
+<h2 id="session-handling-without-sso">Session handling without SSO</h2>
+<p>Sign in</p>
+<ul>
+<li><p>Stay signed in option visible AND not checked
+<img src="https://lh5.googleusercontent.com/h2m6mMsuVWhuVHMce-3jjJcQHhEgO-rRQwXnY73m6ZJNcIrNlxAifBlOAoh3qVLzZvsj0bKA0_MWZVSDEO8GY1gdConfgqLS0TcTHpGquP_cH8OcEP771jn7xYm_4OVQAvRtoVzci1V0PRqwjw" alt=""></p>
+</li>
+<li><p>Stay signed in option not visible OR checked
+<img src="https://lh5.googleusercontent.com/W_G9ZNuPOcLI_o5gOdtDFWMZGuXd_jAu-Io-f4nPv4AEznoUt1eAKJ9o-Bpvq8s5vPrTdMOJ8A-WQpiO2ePR0v7uUgd1lMqiuhY-nPC3WJZVXbFPOmwCs95Gx3g-JVKrexGBnXRcL8YA34fGHg" alt=""></p>
+</li>
+<li><p>Sign out</p>
+</li>
+<li>Stay signed in option status irrelevant
+<img src="https://lh3.googleusercontent.com/KjVbKZDrkU5yi3XdNcY-wuVNZ6M4gxrmSCKwVtWXGTZbC04cA-H7dCcKZ_AUD3Ed-_yDxNbTnwjbidBZ7Po0Kx0B6Zc5bcj0VIZAod0DtUfur43ob_fhDrEyUolfhSHrF0DsCS7Ls94yEItUAg" alt=""></li>
+</ul>
+<h2 id="session-handling-with-sso">Session handling with SSO</h2>
+<p>Possible on standalone browsers or in-app browser tab
+Sign in</p>
+<ul>
+<li><p>SSO active for both services | Stay signed in visible AND not checked
+<img src="https://lh6.googleusercontent.com/7Urj7sSN0k9hVVHSfYbN7x2pIo8ovQpoTqAfsiSqWRuirHs_2Q7jJjWhnr7Ed4B3wZfTuxJbfzQeBNYx58TPMIfeeFv_eFAjv3wGIkpWUe04aWSOb1zGpP39omuDMjD_LjayrQhkJykmwXLtkg" alt=""></p>
+</li>
+<li><p>SSO active for service 1, SSO not active for service 2 | Stay signed not visible OR checked
+<img src="https://lh3.googleusercontent.com/bZx_gRvJBfJjoG7MdRbsM4ctJrkvRyrNQ-Ln3ME8PCX8kGnPrf0g-W8Me2NHBYxn61tHfQ2AzdKPLtsEqXBu7SKjSeer3nlY-fKoCusqZmuyLPN-LUQfJWpg6etYYzPjTB_gff1HTy2U_lGTDg" alt=""></p>
+</li>
+<li><p>SSO not active for service 1, SSO active for service 2 | Stay signed not visible OR checked
+<img src="https://lh4.googleusercontent.com/FrhjcArU3nO4PPoimO85BNBuSsXDhE6ORsA_2V48f4WUxbNqiu5aUyeczvzg9PvIGzGUdGSxKnp0WJVPESedv83O6QfjAMDBgyU9-mQ9d6FuT8m1bzHjLZiVOJYQeX9Y3gwvwM1sPR_cJLS7ug" alt=""></p>
+</li>
+<li><p>SSO active for one or both services | Stay signed in visible AND not checked
+<img src="https://lh4.googleusercontent.com/KbYd8auaQBJoxRFsUs_h3B-hrU4IJ9xPeFyruL6kCRZCdzi7tG9JhO8ysjtpMDIuvvLupQcrN26X7_eEFmDDAlwE3X-2QvhylK8Hw-8RrLouVX0rpk0qpoyAvmu-CfYUCYSl1FIf87WJV--IoQ" alt=""></p>
+</li>
+</ul>
+<p>Sign out</p>
+<ul>
+<li><p>SSO active for both services | Stay signed in visible AND not checked
+<img src="https://lh4.googleusercontent.com/yZklmBtGHkCRDi3vwrKhoTKjPWPAM2wQWsIGkJ2ZKUdsAXThAm-eZ6nJzwxVUUu8gAMTw8aaxUMnDNYPf8asTvL4oSs9ZxF_kNaojEVQ8uO7iCGExnLp-v9JgrMVKDr1yyLfFk5cJCj0GGyegg" alt=""></p>
+</li>
+<li><p>SSO active for one or both services | Stay signed in visible AND not checked
+<img src="https://lh3.googleusercontent.com/j2fZVmwgyQLumPjwNUWzAqDN1rXAEqLSse3o5sMYAngmJjsKyaIrZfmA_hS1zAfqet5eyWOxnoK5Nbb_PlyCbziuzW193WFOEp_7W0hRxuxglV2XW-m_0Ao3PH40bErrnPWUzSRKJ9sR0uQUdg" alt=""></p>
+</li>
+</ul>
+
+      <div class="lesson-nav">
+          <a class="prev" href="/id-docs.telenordigital.com/general-recommendations/integration-sign-in-details.html">&larr; Integration details for handling sign in</a>
+          <a class="next right" href="/id-docs.telenordigital.com/general-recommendations/terminology.html">Terminology/Glossary &rarr;</a>
+      </div>
+        <a class="docs-edit-btn no-print" href="https://github.com/TelenorDigital/id-docs.telenordigital.com/edit/master/docs/general-recommendations/session-handling.md" target="_blank">Edit this page</a>
+    </div>
+  </div>
+    <script src="/id-docs.telenordigital.com/script/swagger-ui/swagger-ui-bundle.js" ></script>
+    <script src="/id-docs.telenordigital.com/script/swagger-ui/swagger-ui-docs-preset.js" ></script>
+  <script src="/id-docs.telenordigital.com/script/vendor.js" ></script>
+  <script src="/id-docs.telenordigital.com/script/script.js" ></script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>
